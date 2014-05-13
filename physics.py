@@ -28,12 +28,13 @@ class PHYSICS(dense_design_matrix.DenseDesignMatrix):
             derived_feat = True
 
         if benchmark == 1:
-            inputfile = '$s/HIGGS.pkl' % path
+            inputfile = '%s/HIGGS.csv' % path
         elif benchmark == 2:
-            inputfile = '$s/SUSY.pkl' % path
+            inputfile = '%s/SUSY.csv' % path
         
-        X = pkl.load(open(inputfile, 'r'))
-        y = X[:,0]
+        #X = pkl.load(open(inputfile, 'r'))
+        X = np.loadtxt(inputfile, dtype='f4', delimiter=',')
+        y = X[:,0].reshape((-1,1))
         X = X[:,1:]
         X = np.array(X, dtype='float32')
         y = np.array(y, dtype='float32')

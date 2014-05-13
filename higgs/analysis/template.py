@@ -53,7 +53,7 @@ def init_train(args):
     
     # Dataset
     benchmark = 1
-    dataset_train = pylearn2.datasets.physics.PHYSICS(which_set='train', benchmark=benchmark, derived_feat=derived_feat) # Smaller set for choosing hyperparameters.
+    dataset_train = pylearn2.datasets.physics.PHYSICS(which_set='train', benchmark=benchmark, derived_feat=derived_feat)
     #dataset_train = pylearn2.datasets.physics.PHYSICS(which_set='train', benchmark=benchmark, derived_feat=derived_feat, start=0, stop=2600000) # Smaller set for choosing hyperparameters.
     dataset_train_monitor = pylearn2.datasets.physics.PHYSICS(which_set='train', benchmark=benchmark, derived_feat=derived_feat, start=0,stop=100000)
     dataset_valid = pylearn2.datasets.physics.PHYSICS(which_set='valid', benchmark=benchmark, derived_feat=derived_feat)
