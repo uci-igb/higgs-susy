@@ -17,4 +17,4 @@ http://archive.ics.uci.edu/ml/datasets/SUSY
 5) Run python scripts to train individual NN models. Results can be observed
 in the log files.
 
-
+6) AUC can be computed with the python script computeauc.py
