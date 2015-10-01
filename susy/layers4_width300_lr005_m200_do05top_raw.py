@@ -6,6 +6,8 @@ import theano
 import pylearn2
 import pylearn2.datasets.physics
 import pylearn2.training_algorithms.sgd
+import pylearn2.termination_criteria
+import pylearn2.costs.mlp.dropout 
 #import pylearn2.space
 import pylearn2.models.mlp as mlp
 import pylearn2.train
