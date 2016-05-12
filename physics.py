@@ -46,7 +46,7 @@ class PHYSICS(dense_design_matrix.DenseDesignMatrix):
             ntrain = 10000000 
             nvalid = 500000 
             ntest  = 500000
-        elif bechmark == 2:
+        elif benchmark == 2:
             # SUSY
             ntrain = 4000000 
             nvalid = 500000 
